@@ -91,17 +91,21 @@ body {
 }
 
 .buttons {
-  margin-top: 25px;
+  width: 100%;
   display: flex;
-  gap: 20px;
+  justify-content: space-between; /* PUSH LEFT + RIGHT */
+  padding: 0 40px; /* spacing from edges */
+  margin-top: 25px;
 }
 
 button {
-  padding: 12px 25px;
+  padding: 12px 30px;
   border: none;
-  border-radius: 8px;
-  font-size: 1.2rem;
-  font-weight: 700;
+  border-radius: 10px;
+  font-size: 1.4rem;
+  font-weight: 800;
   cursor: pointer;
   background: #ffcc00;
+  color: #003;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.25);
 }

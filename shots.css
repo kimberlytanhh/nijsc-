@@ -114,6 +114,30 @@ html, body {
   color: #ffea00;
 }
 
+/* Center the camera */
+.camera-center {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+/* Icons below circle */
+.icon-row {
+  margin-top: 10px;
+  display: flex;
+  gap: 60px;
+  justify-content: center;
+}
+
+/* Buttons under icons */
+.buttons {
+  margin-top: 15px;
+  width: 100%;
+  max-width: 380px;
+  display: flex;
+  justify-content: space-between;
+}
+
 /* Responsive fix for small iPhones */
 @media (max-height: 750px) {
   .camera-wrap {

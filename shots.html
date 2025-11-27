@@ -21,21 +21,27 @@
     </div>
 
     <!-- Icons + Camera Row (icons left & right of the circle) -->
-    <div class="shots-container" aria-label="camera row">
-      <img src="shots.png" alt="left shot icon" class="shot-icon left-shot" />
+    <!-- Icons + Camera + Buttons in one row -->
+<div class="shots-row">
 
-      <div class="camera-wrap" role="img" aria-label="camera view">
-        <video id="video" autoplay playsinline></video>
-      </div>
+  <!-- LEFT ICON + BUTTON -->
+  <div class="icon-block">
+    <img src="shots.png" class="shot-icon" />
+    <button id="searchBtn" class="btn small-btn">Search</button>
+  </div>
 
-      <img src="shots.png" alt="right shot icon" class="shot-icon right-shot" />
-    </div>
+  <!-- MIDDLE CIRCLE -->
+  <div class="camera-wrap">
+    <video id="video" autoplay playsinline></video>
+  </div>
 
-    <!-- Buttons BELOW the icons -->
-    <div class="buttons-under-icons" role="group" aria-label="Shot controls">
-      <button id="searchBtn" class="btn">Search</button>
-      <button id="drinkBtn" class="btn">Drink!</button>
-    </div>
+  <!-- RIGHT ICON + BUTTON -->
+  <div class="icon-block">
+    <img src="shots.png" class="shot-icon" />
+    <button id="drinkBtn" class="btn small-btn">Drink!</button>
+  </div>
+
+</div>
 
   </div> <!-- /.page -->
 

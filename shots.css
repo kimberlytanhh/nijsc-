@@ -108,3 +108,10 @@ button {
 }
 
 .found { color: #ffea00; }
+
+/* --- Pinch to Zoom Camera --- */
+.camera-wrap {
+  touch-action: none; /* IMPORTANT for iPhone gesture capture */
+  transform-origin: center center;
+  transition: transform 0.05s linear;
+}

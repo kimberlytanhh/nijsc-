@@ -12,6 +12,33 @@ html, body {
   overflow-x: hidden;
 }
 
+/* Three-column row: icon-left / circle / icon-right */
+.shots-row {
+  margin-top: 10px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 20px;
+}
+
+/* Wrapper for each icon + button */
+.icon-block {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Smaller buttons so they fit perfectly under icons */
+.small-btn {
+  margin-top: 8px;
+  padding: 8px 16px;
+  font-size: 1rem;
+  border-radius: 8px;
+  width: 100px;
+  text-align: center;
+}
+
 /* Banner */
 .banner {
   width: 100%;

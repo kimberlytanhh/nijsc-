@@ -20,27 +20,24 @@
       Who’s going to get drunk tonight?
     </div>
 
-    <!-- Camera + Side Icons -->
-    <!-- Circle camera centered -->
-  <div class="camera-center">
-    <div class="camera-wrap">
-      <video id="video" autoplay playsinline></video>
-    </div>
-  </div>
-  
-  <!-- Icons BELOW circle -->
-  <div class="icon-row">
-    <img src="shots.png" class="shot-icon" />
-    <img src="shots.png" class="shot-icon" />
-  </div>
-  
-  <!-- Buttons BELOW icons -->
-  <div class="buttons">
-    <button id="searchBtn" class="btn">Search</button>
-    <button id="drinkBtn" class="btn">Drink!</button>
-  </div>
+    <!-- Icons + Camera Row (icons left & right of the circle) -->
+    <div class="shots-container" aria-label="camera row">
+      <img src="shots.png" alt="left shot icon" class="shot-icon left-shot" />
 
-  </div>
+      <div class="camera-wrap" role="img" aria-label="camera view">
+        <video id="video" autoplay playsinline></video>
+      </div>
+
+      <img src="shots.png" alt="right shot icon" class="shot-icon right-shot" />
+    </div>
+
+    <!-- Buttons BELOW the icons -->
+    <div class="buttons-under-icons" role="group" aria-label="Shot controls">
+      <button id="searchBtn" class="btn">Search</button>
+      <button id="drinkBtn" class="btn">Drink!</button>
+    </div>
+
+  </div> <!-- /.page -->
 
   <script src="shots.js"></script>
 </body>

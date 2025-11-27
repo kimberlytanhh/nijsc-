@@ -3,8 +3,14 @@ const searchBtn = document.getElementById("searchBtn");
 const drinkBtn = document.getElementById("drinkBtn");
 
 // Start webcam
-navigator.mediaDevices.getUserMedia({ video: true }).then(stream => {
+navigator.mediaDevices.getUserMedia({
+    video: { facingMode: { exact: "environment" } }
+}).then(stream => {
     video.srcObject = stream;
+}).catch(err => {
+    console.log("Back camera not available, using default.", err);
+    navigator.mediaDevices.getUserMedia({ video: true })
+        .then(stream => video.srcObject = stream);
 });
 
 // Create overlay text

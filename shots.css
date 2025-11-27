@@ -31,7 +31,7 @@ html, body {
 
 /* Smaller buttons so they fit perfectly under icons */
 .small-btn {
-  margin-top: 23px;
+  margin-top: 35px;
   padding: 8px 16px;
   font-size: 1rem;
   border-radius: 8px;
@@ -87,7 +87,7 @@ html, body {
 
 /* Icons beside circle */
 .shot-icon {
-  width: 180px;
+  width: 300px;
 }
 
 /* Circle camera */

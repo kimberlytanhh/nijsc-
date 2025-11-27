@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Shots Cam</title>
+  <link rel="stylesheet" href="shots.css" />
+</head>
+
+<body>
+  <div class="shots-container">
+    <img src="shots.png" class="shot-icon left-shot" />
+
+    <div class="camera-frame">
+      <video id="video" autoplay playsinline></video>
+    </div>
+
+    <img src="shots.png" class="shot-icon right-shot" />
+  </div>
+
+  <div class="buttons">
+    <button id="searchBtn">Search</button>
+    <button id="drinkBtn">Drink!</button>
+  </div>
+
+  <script src="shots.js"></script>
+</body>
+</html>

@@ -158,24 +158,30 @@ my<!DOCTYPE html>
   </style>
 </head>
 <body>
-  <div class="banner">SHOTS CAM</div>
+   <div class="banner">SHOTS CAM</div>
 
   <div class="page">
-    <div class="shots-container">
-      <img alt="shot icon left" src="shots.png" class="shot-icon left-shot" />
+    
+    <!-- TEXT NOW UNDER BANNER -->
+    <div class="shots-text" id="overlayText">
+      Who’s going to get drunk tonight?
+    </div>
 
-      <div class="camera-wrap" aria-hidden="false">
-        <div class="shots-text" id="overlayText">Who’s going to get drunk tonight?</div>
+    <div class="shots-container">
+      <img src="shots.png" class="shot-icon" />
+      
+      <div class="camera-wrap">
         <video id="video" autoplay playsinline></video>
       </div>
 
-      <img alt="shot icon right" src="shots.png" class="shot-icon right-shot" />
+      <img src="shots.png" class="shot-icon" />
     </div>
 
-    <div class="buttons" role="group" aria-label="Shot controls">
-      <button id="searchBtn" class="btn">Search</button>
-      <button id="drinkBtn" class="btn">Drink!</button>
+    <div class="buttons">
+      <button id="searchBtn">Search</button>
+      <button id="drinkBtn">Drink!</button>
     </div>
+
   </div>
 
   <!-- INLINE JS: no external dependency -->
